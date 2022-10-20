@@ -17,7 +17,6 @@ const Task = ({ title, description, tasks, setTasks, id }) => {
         children="mark as complete"
         type="completed"
       />
-      <Button handler={handleDelete} children="Delete" type="delete" />
     </div>
   );
 };
