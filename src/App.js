@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./routes/Home.route";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    const items = localStorage.getItem("tasks");
+
+    if (items) {
+      setTasks(JSON.parse(items));
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="app">
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home tasks={tasks} setTasks={setTasks} />} />
+          <Route path="*" element={<h1>Page Not found</h1>} />
+        </Route>
+      </Routes>
+    </section>
   );
 }
 

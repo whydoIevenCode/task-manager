@@ -1,0 +1,18 @@
+.task {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  button:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+.task:not(:last-child) {
+  margin-bottom: 2rem;
+}

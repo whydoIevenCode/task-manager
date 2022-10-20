@@ -1,0 +1,21 @@
+.app-wrapper {
+  height: 100vh;
+  width: 120rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 120rem) {
+  .app-wrapper {
+    width: 90rem;
+  }
+}
+@media (max-width: 90rem) {
+  .app-wrapper {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

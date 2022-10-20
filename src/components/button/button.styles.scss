@@ -1,0 +1,15 @@
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 6px;
+  padding: 1rem 3rem;
+  &__add {
+    background-color: rgb(99, 158, 225);
+  }
+  &__completed {
+    background-color: rgb(67, 121, 102);
+  }
+  &__delete {
+    background-color: rgb(205, 91, 95);
+  }
+}
