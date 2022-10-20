@@ -7,15 +7,15 @@
   justify-content: space-around;
 }
 
-@media (max-width: 110rem) {
-  .app-wrapper {
-    width: 100rem;
-    flex-wrap: nowrap;
-  }
-}
 @media (max-width: 90rem) {
   .app-wrapper {
     width: 80%;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 110rem) {
+  .app-wrapper {
+    width: 100rem;
+    flex-wrap: nowrap;
   }
 }
