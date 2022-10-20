@@ -6,16 +6,3 @@
   align-items: center;
   justify-content: space-around;
 }
-
-@media screen and (max-width: 90rem) {
-  .app-wrapper {
-    width: 80%;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 110rem) {
-  .app-wrapper {
-    width: 100rem;
-    flex-wrap: nowrap;
-  }
-}
